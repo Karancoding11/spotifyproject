@@ -1,43 +1,35 @@
 [
-    {
-      "filename": "Courtside.mp3",
-      "title": "Courtside",
-      "artist": "Karan Aujla"
-    },
-    {
-      "filename": "Panjab2.mp3",
-      "title": "Panjab 2",
+  {
+      "title": "Courtside Original.mp3",
+      "artist": "Karan Aujla , Signature By SB"
+  },
+  {
+      "title": "Panjab 2.mp3",
       "artist": "Sidhu MooseWala"
-    },
-    {
-      "filename": "Muchh.mp3",
-      "title": "Muchh",
+  },
+  {
+      "title": "Muchh.mp3",
       "artist": "Nirvair Pannu"
-    },
-    {
-      "filename": "Jindey.mp3",
-      "title": "Jindey",
-      "artist": "Arjan Dhillon"
-    },
-    {
-      "filename": "Okay.mp3",
-      "title": "Okay",
+  },
+  {
+      "title": "Jindey.mp3",
+      "artist": "Arjan Dhillon , Mxrci"
+  },
+  {
+      "title": "Okay.mp3",
       "artist": "AP Dhillon"
-    },
-    {
-      "filename": "MaroonMaroon.mp3",
-      "title": "Maroon Maroon",
+  },
+  {
+      "title": "Maroon Maroon.mp3",
       "artist": "Kulwinder Billa"
-    },
-    {
-      "filename": "PunjabVekhKe.mp3",
-      "title": "Punjab Punjab Vekh Ke",
-      "artist": "Gulab Sidhu, Jassa Dhillon, Thiarxjatt"
-    },
-    {
-      "filename": "Bloodline.mp3",
-      "title": "Bloodline",
-      "artist": "KS Makhan"
-    }
-  ]
-  
+  },
+  {
+      "title": "Punjab Punjab Vekh Ke.mp3",
+      "artist": "Gulab Sidhu , Jassa Dhillon , Thiarxjatt"
+  },
+  {
+      "title": "Supreme.mp3",
+      "artist": "Shubh"
+  }
+]
+

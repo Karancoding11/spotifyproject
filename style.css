@@ -94,7 +94,7 @@ body{
 }
 .login{
     background-color: white;
-
+    text-decoration: none;
 }
 .login:hover{
     scale: 1.08;
@@ -421,59 +421,131 @@ body{
     display: block;
 }
 @media (max-width: 768px) {
+    .mobile-menu-btn {
+  display: block;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 101;
+  background: #000;
+  border: none;
+  padding: 10px;
+}
+    /* Mobile-first approach */
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+  }
+  
+  .left, .right {
+    width: 100%;
+  }
+  
+  .left {
+    order: 2; /* Moves sidebar to bottom on mobile */
+    height: auto;
+    padding-bottom: 80px; /* Space for playbar */
+  }
+  
+  .right {
+    order: 1; /* Content comes first on mobile */
+    max-height: none;
+  }
+  
+  /* Header adjustments */
+  .header {
+    flex-direction: column;
+    padding: 10px;
+    gap: 15px;
+  }
+  
+  .header .button {
+    display: flex;
+    gap: 10px;
+  }
+  
+  /* Cards grid for mobile */
+  .cardContainers {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 10px;
+  }
+  
+  .SpotifyPlaylists .cards {
+    width: 100%;
+    height: auto;
+    padding: 8px;
+  }
+  
+  /* Navigation items */
+  .home ul li {
+    padding: 12px 15px;
+  }
+  
+  /* Playbar mobile adjustments */
+  .playbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-radius: 0;
+    height: 70px;
+    padding: 10px;
+    z-index: 100;
+  }
+  
+  .playbuttons img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  /* Song list mobile */
+  .songlist ul li {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px;
+  }
+  
+  .info {
+    width: 100%;
+  }
+  
+  .playnow {
+    width: 100%;
+    margin-top: 8px;
+  }
+  
+  /* Tablet and larger screens */
+  @media (min-width: 768px) {
     .container {
-        flex-direction: column;
+      flex-direction: row;
     }
-
-    .left, .right {
-        width: 100vw;
-    }
-
+    
     .left {
-        order: 2;
+      width: 28vw;
+      order: 1;
+      height: 100vh;
+      position: sticky;
+      top: 0;
     }
-
+    
     .right {
-        order: 1;
-        max-height: none;
-        overflow: auto;
+      width: 72vw;
+      order: 2;
     }
-
-    .header {
-        flex-direction: column;
-        gap: 10px;
-    }
-
+    
     .cardContainers {
-        justify-content: center;
+      grid-template-columns: repeat(4, 1fr);
     }
-
-    .cards {
-        width: 100%;
-        max-width: 300px;
-        margin: auto;
-    }
-
+    
     .playbar {
-        flex-direction: column;
-        height: auto;
-        padding: 10px;
-        gap: 10px;
+      position: absolute;
+      width: 96%;
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: 10px;
+      bottom: 8px;
     }
-
-    .volume-control input {
-        width: 100%;
-    }
-
-    .footer {
-        flex-direction: column;
-        gap: 6px;
-        text-align: center;
-        position: static;
-        margin-top: 20px;
-    }
-
-    .songlist {
-        height: auto;
-    }
+  }
 }

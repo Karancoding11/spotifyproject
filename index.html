@@ -57,12 +57,13 @@
 
             <div class="header flex">
                 <div class="nav">
+                    
                     <img class="invert" src="svg/arrow-left-01-stroke-rounded.svg" alt="left" />
                     <img class="invert" src="svg/arrow-right-01-stroke-rounded.svg" alt="right" />
                 </div>
                 <div class="button">
                     <button class="signup btn">Sign up</button>
-                    <button class="login btn">Login</button>
+                    <button class="login btn" id="loginBtn">Login</button>
                 </div>
             </div>
             <div class="SpotifyPlaylists">
@@ -136,7 +137,12 @@
                 <audio id="audioPlayer" src="your-audio.mp3"></audio>
 
             </div>
-        </div>
+        </div><script>
+            document.getElementById("loginBtn").addEventListener("click", function () {
+              window.location.href = "logo.html";
+            });
+          </script>
+          
         <script src="script.js"></script>
 </body>
 
