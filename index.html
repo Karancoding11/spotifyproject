@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JasKaran Spotify</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="utility.css" />
+    <link rel="icon" href="favicon.0f31d2ea.ico">
+    
+</head>
+
+<body>
+    <div class="container flex">
+        <div class="left">
+            <div class="home bg-grey border-rounded m-1 p-1">
+                <div class="logo">
+                    <img class="invert" src="svg/logo.svg" alt="logo" />
+                </div>
+                <ul>
+                    <li><img class="invert" src="svg/home.svg" alt="home" />Home</li>
+                    <li><img class="invert" src="svg/search.svg" alt="search" />Search</li>
+                </ul>
+            </div>
+            <div class="library bg-grey border-rounded p-1 m-1">
+                <div class="heading flex items-center">
+                    <img class="invert" src="svg/your.svg" alt="your" />
+                    <h2>Your Library</h2>
+                </div>
+                <div class="songlist">
+                    <ul>
+                        
+                    </ul>
+                </div>
+                <div class="footer flex">
+                    <div><a href="https://www.spotify.com/in-en/legal/">Legal</a></div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/safetyandprivacy/">Safety & Privacy Center</a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/legal/privacy-policy/">Privacy Policy</a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/legal/cookies-policy/">Cookies</a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3">About Ads</a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/accessibility/">Accessibility</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right bg-grey p-1 m-1 border-rounded">
+
+            <div class="header flex">
+                <div class="nav">
+                    <img class="invert" src="svg/arrow-left-01-stroke-rounded.svg" alt="left" />
+                    <img class="invert" src="svg/arrow-right-01-stroke-rounded.svg" alt="right" />
+                </div>
+                <div class="button">
+                    <button class="signup btn">Sign up</button>
+                    <button class="login btn">Login</button>
+                </div>
+            </div>
+            <div class="SpotifyPlaylists">
+                <h1>Spotify Playlist</h1>
+                <div class="cardContainers">
+                    <div class="cards">
+                        <div class="play"><img src="svg/play-button-green-icon.svg" alt=""></div>
+                        <img src="image/ab67616d00001e0215db3a0329a244d8b1c3049a.jpeg" alt="" />
+                        <h2>Courtside</h2>
+                        <p>Karan Aujla , Signature By SB</p>
+                    </div>
+                    <div class="cards">
+                        <img src="/image/Panjab-2-1.jpg" alt="" />
+                        <h2>Panjab 2</h2>
+                        <p>Sidhu MooseWala</p>
+                    </div>
+                    <div class="cards">
+                        <img src="/image/Muchh-1.jpg" alt="" />
+                        <h2>Muchh</h2>
+                        <p>Nirvair Pannu</p>
+                    </div>
+                    <div class="cards">
+                        <img src="/image/Jindey.jpg" alt="" />
+                        <h2>Jindey</h2>
+                        <p>Arjan Dhillon , Mxrci</p>
+                    </div>
+                    <div class="cards">
+                        <img src="/image/OKAY-1.jpg" alt="" />
+                        <h2>Okay</h2>
+                        <p>Ap Dhillon</p>
+                    </div>
+                    <div class="cards">
+                        <img src="/image/Maroon-Maroon-1.jpg" alt="" />
+                        <h2>Maroon Maroon</h2>
+                        <p>Kulwinder billa</p>
+                    </div>
+                    <div class="cards">
+                        <img src="/image/Punjab-Vekh-Ke-1.jpg" alt="" />
+                        <h2>Punjab Punjab Vekh Ke</h2>
+                        <p>Gulab Sidhu , jassa Dhillon , thiarxjatt</p>
+                    </div>
+                    <div class="cards">
+                        <img src="/image/Bloodline-1.jpg" alt="" />
+                        <h2>Bloodline</h2>
+                        <p>KS Makhan</p>
+                    </div>
+                </div>
+            </div>
+            <div class="playbar">
+                <div class="seekbar">
+                    <div class="circle"></div>
+                  </div>
+                  <div class="time-display">
+                    <span id="currentTime">0:00</span> / <span id="duration">0:00</span>
+                  </div>
+                  
+                <div class="volume-control">
+                    <input type="range" id="volumeSlider" min="0" max="1" step="0.01" />
+                </div>
+                <!-- <div class="time-display">
+                    <span id="currentTime">0:00</span> / <span id="duration">0:00</span>
+                </div> -->
+                
+                <div class="songinfo"></div>
+                <div class="playbuttons">
+                    <img id="previous" src="svg/previous-stroke-rounded.svg" alt="previous">
+                    <img id="pause" src="svg/play.svg" alt="">
+                    <img id="next" src="svg/next-stroke-rounded.svg" alt="">
+                </div>
+                <div class="songtime"></div>
+                <audio id="audioPlayer" src="your-audio.mp3"></audio>
+
+            </div>
+        </div>
+        <script src="script.js"></script>
+</body>
+
+</html>
